@@ -1,0 +1,166 @@
+/* src/App.css */
+.app {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 200px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    color: white;
+  }
+  
+  .main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .header {
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .box {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px);
+  }
+  
+  /* src/App.css */
+.sidebar ul {
+    list-style-type: none; /* Ini buat ilangin titiknya */
+    padding: 0;
+  }
+  
+  .sidebar ul li a {
+    padding: 10px 0;
+    color: white;
+  }
+  
+  .sidebar ul li:hover {
+    cursor: pointer;
+    background-color: rgb(170, 165, 165); /* Biar ada efek hover */
+  }
+
+  /* src/App.css */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Biar space antara menu utama dan link bawah */
+    background-color: #333;
+    color: white;
+    height: 100vh; /* Sidebar biar memenuhi layar */
+    padding: 20px;
+  }
+  
+  .menu-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu-items li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+  
+  .menu-items li a:hover {
+    color: #f0f0f0;
+  }
+  
+  .bottom-link {
+    list-style-type: none;
+    margin-top: auto; /* Ini buat dorong link ke bawah */
+  }
+  
+  .bottom-link li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+  }
+  
+  .bottom-link li a:hover {
+    color: #f0f0f0;
+  }
+  
+  /* src/admin.css */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    position: relative; /* Tambahin ini biar posisi relatif */
+  }
+  
+  .sidebar.closed {
+    width: 60px; /* Sidebar lebih kecil saat ditutup */
+  }
+  
+  /* Konten sidebar yang bisa di-hide */
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 50px); /* Sisakan ruang untuk button */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  ul li a:hover {
+    background-color: #444;
+  }
+  
+  .bottom-link {
+    margin-top: auto;
+  }
+  
+  /* Style untuk toggle button */
+ /* Style untuk toggle button */
+.toggle-btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px; /* Posisi tombol dekat dengan sidebar */
+    z-index: 100; /* Supaya muncul di atas elemen lain */
+    margin-top: auto;
+  }
+  
+  .toggle-btn:hover {
+    background-color: #555;
+  }
+  
+  /* Supaya sidebar bisa terlihat tutup/buka */
+  .sidebar.closed {
+    width: 50px;
+  }
+  
+  .sidebar.open {
+    width: 250px;
+  }
+  
